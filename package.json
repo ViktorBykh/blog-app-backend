@@ -1,0 +1,37 @@
+{
+  "name": "blog-app-backend",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Blog App Backend",
+  "author": "Viktor Bykh",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node server.js",
+    "dev": "nodemon server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "^2.24.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "eslint-plugin-tailwindcss": "^3.17.4",
+    "express": "^4.19.2",
+    "log4js": "^6.9.1",
+    "mongoose": "^8.5.2",
+    "nodemon": "^3.1.4",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "eslint": "^9.8.0",
+    "eslint-plugin-react": "^7.35.0",
+    "globals": "^15.9.0",
+    "typescript-eslint": "^8.0.0"
+  }
+}
