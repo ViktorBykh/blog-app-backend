@@ -22,3 +22,5 @@ mongoose.connect(process.env.MONGODB_URI)
 
 app.use('/posts', routes)
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
+
+export default app
