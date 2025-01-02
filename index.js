@@ -11,12 +11,13 @@ import { swaggerDocs } from './src/config/swagger/swagger.js'
 dotenv.config()
 
 const app = express()
+const port = process.env.PORT || 4000
 app.use(bodyParser.json())
 app.use(cors())
 
 mongoose.connect(process.env.MONGODB_URI)
-  .then(() => app.listen(process.env.PORT, () => logger.info(
-    `Connected to MongoDB and listening on port ${process.env.PORT}`,
+  .then(() => app.listen(port, () => logger.info(
+    `Connected to MongoDB and listening on port ${port}`,
   )))
   .catch(error => logger.error(error.message))
 
